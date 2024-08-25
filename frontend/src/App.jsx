@@ -26,7 +26,7 @@ function App() {
 
     try {
       const parsedInput = JSON.parse(jsonInput);
-      const res = await axios.post(`${backend_url}/bfhl`, {
+      const res = await axios.post(backend_url, {
         data: parsedInput.data,
       });
       // console.log(res.data);
